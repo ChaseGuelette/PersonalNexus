@@ -1,19 +1,32 @@
-# PersonalNexusBrain - Agent Instructions
+# PersonalNexus - Agent Instructions
 
 > Part of [[BRAIN-INDEX]]
 
 ## What Is This Brain?
 
-<!-- TODO: Describe PersonalNexus here — what it is, what it does, and what the goal is. -->
+PersonalNexus is a 3D interactive knowledge graph — somewhere between a journal, a notepad, and a museum of self — that visualizes Chase's thoughts, memories, and creative fragments as a living artwork. Entries (text, images, video) become nodes; relationships become DNA-helix-style connections; the whole thing lives in 3D space where related ideas sit physically close. The aesthetic is cosmic: deep blue nebulas, sacred geometry, ticking watches in space, Skyrim-skill-tree navigation.
+
+It is NOT a productivity tool. It is a way to make sense of, and witness, the flurry of things in Chase's head.
 
 ## Owner
 - **Role**: Founder & Solo Developer
-- **Context**: <!-- TODO: Fill in current context and where things stand -->
-- **Goals**: <!-- TODO: Fill in primary goals -->
+- **Context**: Early-stage build. Vision is articulated (see [[Vision/Core-Concept]]). Tooling is set up: OpenCode + GLM workflow, vector DB (`ruvector.db`) at root, brain-tree OS viewer running on port 3000. No application code yet — first task is scaffolding the data model and a minimal 3D viewer.
+- **Goals**:
+  1. Get a minimum viable 3D nexus on screen — orb + helixes + a handful of seed nodes — that proves the visual concept
+  2. Build the ingestion pipeline so journal entries, images, and videos can flow in
+  3. Develop the association/embedding algorithm that places nodes meaningfully in 3D space
+  4. Keep the artistic vision uncompromised — this is art, not just software
 
 ## Brain Structure
-
-<!-- TODO: Define your brain structure categories here once you run /init-braintree -->
+- [[Vision]] - Core concept, experience goals, inspirations, success criteria
+- [[Design]] - Visual language, backgrounds, node aesthetics, navigation model
+- [[Architecture]] - Data model, storage, 3D engine choice, performance strategy
+- [[Algorithms]] - Association matrices, embeddings, 3D layout, poetry analysis
+- [[Content]] - Ingestion pipelines (text/image/video), tagging, seed entries
+- [[Build]] - MVP scope, phased milestones, open questions
+- [[Assets]] - Pointers into the project's `images/` reference folder
+- [[Handoffs]] - Session continuity notes
+- [[Templates]] - Reusable note structures
 
 ## Conventions
 - Use [[wikilinks]] for all cross-references between notes, but ONLY link to files that exist. Never create wikilinks to files that haven't been created yet.
@@ -110,6 +123,10 @@ A headless OpenCode server runs at `http://localhost:4096` (started from the pro
 ## Subagents
 Specialized agents in .claude/agents/:
 - [[explorer]] - Haiku-powered codebase search and file reading (max 5-12 tool calls)
+- [[builder]] - Implementation, 3D rendering, code execution
+- [[architect]] - Systems design, data models, algorithm trade-offs
+- [[artist]] - Visual direction, aesthetic coherence
+- [[curator]] - Content organization, tagging, poetry-style analysis
 
 ## Commands
 - /init-braintree - Initialize a new brain

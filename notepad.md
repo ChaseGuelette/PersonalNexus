@@ -42,3 +42,5 @@ Artistic part. How do we handle visual aspects and updating it. I've breifly tou
 How to keep the whole thing running without lag 
 
 I imagine it, visually, as the skyrim skill trees. you are looking at the nexus itself, and then you can zoom in on sections while still being able to see other stuff. I want the background to be a mixture of stars, but as you scroll the color of those stars changes. I want the background to be designable. Like I want to be able to incorperate different designs into the stars. Ill give you an excample. I want to have a giant watch in the background that is ticking in real time. As you orient yourself around the nexus, that watch changes. It will have different designs. I can create visual images of the watches so that we can work with them. 
+
+
